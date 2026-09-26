@@ -15,12 +15,12 @@ struct HomeHeroView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
             
-            Text("Quality seating for churches—priced with stewardship in mind.")
+            Text(String(localized: "Quality seating for churches—priced with stewardship in mind."))
                 .font(.system(size: 28, weight: .bold))
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
             
-            Text("Built for high-use worship and gathering spaces.")
+            Text(String(localized: "Built for high-use worship and gathering spaces."))
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -28,7 +28,7 @@ struct HomeHeroView: View {
             NavigationLink {
                 ChairListView()
             } label: {
-                Text("Browse Chairs")
+                Text(String(localized: "Browse Chairs"))
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)

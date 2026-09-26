@@ -13,14 +13,14 @@ struct QuickActionRow: View {
             NavigationLink {
                 QuoteView()
             } label: {
-                QuickActionCard(title: "Request Quote", icon: "doc.text.fill")
+                QuickActionCard(title: String(localized: "Request Quote"), icon: "doc.text.fill")
             }
             .buttonStyle(.plain)
             
             NavigationLink {
                 ContactView()
             } label: {
-                QuickActionCard(title: "Contact", icon: "phone.fill")
+                QuickActionCard(title: String(localized:"Contact"), icon: "phone.fill")
             }
             .buttonStyle(.plain)
         }

@@ -10,11 +10,11 @@ import SwiftUI
 struct ResourcesView: View {
     
     let resources = [
-        "How to Choose the Right Chairs for Your Church",
-        "How Many Chairs Do You Really Need?",
-        "How to Upgrade Your Seating Without Blowing the Budget",
-        "Common Mistakes Churches Make When Buying Chairs",
-        "Why Buying Direct Saves Organizations Thousands"
+        String(localized: "How to Choose the Right Chairs for Your Church"),
+        String(localized: "How Many Chairs Do You Really Need?"),
+        String(localized: "How to Upgrade Your Seating Without Blowing the Budget"),
+        String(localized: "Common Mistakes Churches Make When Buying Chairs"),
+        String(localized: "Why Buying Direct Saves Organizations Thousands")
     ]
     
     var body: some View {
@@ -24,13 +24,13 @@ struct ResourcesView: View {
                     Text(resource)
                         .font(.headline)
                     
-                    Text("Helpful seating advice for churches and nonprofits.")
+                    Text(String(localized: "Helpful seating advice for churches and nonprofits."))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
                 .padding(.vertical, 6)
             }
-            .navigationTitle("Resources")
+            .navigationTitle(String(localized: "Resources"))
         }
     }
 }

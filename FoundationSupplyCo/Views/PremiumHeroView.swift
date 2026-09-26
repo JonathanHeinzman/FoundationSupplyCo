@@ -12,12 +12,12 @@ struct PremiumHeroView: View {
         VStack(alignment: .leading, spacing: 18) {
             WordmarkView()
 
-            Text("Quality seating for churches—priced with stewardship in mind.")
+            Text(String(localized: "Quality seating for churches—priced with stewardship in mind."))
                 .font(.fscHero)
                 .foregroundStyle(Color.fscDark)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text("Built for high-use worship and gathering spaces.")
+            Text(String(localized: "Built for high-use worship and gathering spaces."))
                 .font(.headline)
                 .foregroundStyle(.secondary)
 
@@ -32,7 +32,7 @@ struct PremiumHeroView: View {
             NavigationLink {
                 ChairListView()
             } label: {
-                PrimaryButton(title: "Browse Chairs")
+                PrimaryButton(title: String(localized: "Browse Chairs"))
             }
         }
         .padding(22)
