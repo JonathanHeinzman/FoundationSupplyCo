@@ -35,7 +35,7 @@ struct ContentView: View {
                     Label("Contact", systemImage: "envelope")
                 }
             
-            ChairARView(modelName: "PremierChair_Optimized", realHeight: .init(value: 34, unit: .inches))
+            ChairARView(modelName: "FoundationChair_Optimizedwe", realHeight: .init(value: 34, unit: .inches))
                 .tabItem {
                     Label("AR", systemImage: "sunglasses")
                 }
