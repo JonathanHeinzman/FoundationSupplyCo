@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Chair: Identifiable {
+struct Chair: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let imageName: String
